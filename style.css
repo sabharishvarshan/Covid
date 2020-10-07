@@ -1,0 +1,133 @@
+/* Global (Common for every element) */
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Main Division (header) */
+.header {
+  background-image: url(https://media.istockphoto.com/videos/novel-coronavirus-covid19-2019ncov-sars-mers-h1n1-and-flu-epidemic-video-id1217649829?b=1&k=6&m=1217649829&s=640x640&h=E0yupK21wabp9HpKXMz8_8-9vZ9RPOtRUMmHTj1u96s=);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Sub division (used for alignment - box) */
+.box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading - Bakeit! */
+h1 {
+  font-size: 5rem;
+}
+
+/* Button - Read More */
+.read {
+  margin-top: 2rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+}
+.form-inline {
+	display: inline-block;
+}
+.navbar-header.col {
+	padding: 0 !important;
+}	
+.navbar {		
+	background: #fff;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-bottom: 1px solid #d6d6d6;
+	box-shadow: 0 0 4px rgba(0,0,0,.1);
+}
+.nav-link {
+	margin: 0 5px;
+}
+.nav-link img {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin: -8px 0;
+	float: left;
+	margin-right: 10px;
+}
+.navbar .navbar-brand {
+	color: #555;
+	padding-left: 0;
+	font-size: 20px;
+	padding-right: 50px;
+	font-family: 'Raleway', sans-serif;
+}
+.navbar .navbar-brand b {
+	font-weight: bold;
+	color: #f1250a;
+}
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+	color: #f08373 !important;
+}
+.navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
+	color: #eb5844 !important;
+	background: transparent !important;
+}
+.navbar .nav-item i {
+	font-size: 18px;
+}
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.show > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+	font-size: 15px;
+}
+.navbar .navbar-form {
+	margin-right: 0;
+	margin-left: 0;
+	border: 0;
+}
+@media (min-width: 992px){
+	.form-inline .input-group {
+		width: 250px;
+		margin-right: 30px;
+	}
+}
+@media (max-width: 991px){
+	.form-inline {
+		display: block;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+	.input-group {
+		width: 100%;
+	}
+}
+#divpass{
+	width: fit-content;
+	background-color: rgba(226, 139, 193, 0.89);
+	font-weight: bold;
+	position: relative;
+	animation: mymove 5s infinite;
+  }
+#divpass {animation-timing-function: ease;}  
+  @keyframes mymove {
+	from {left: 0px;}
+	to {left: 1000px;}
+  }
+

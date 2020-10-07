@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>E pass</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+      <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+      <script type="text/javascript" src="fb.js"></script>
+      <script>
+        window.onload = function() {
+      document.getElementById('name').textContent=localStorage.getItem("storageName");
+      document.getElementById('userimg').src=localStorage.getItem("img");
+      document.getElementById('uid').textContent=localStorage.getItem("uid");
+    };
+      </script>
+      <style>
+         iframe {
+            display: block;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+         <div class="p-4 pt-5">
+            <img src="images/logo.jpg" class="img logo rounded-circle mb-6" id="userimg">
+            <ul class="list-unstyled components mb-5">
+               <li>
+                  <a href="userform.php" target="booking">Apply new</a>
+               </li>
+               <li>
+                  <a href="userpass.php" target="booking">Status</a>
+               </li>
+               <li>
+                  <a href="#">Contact</a>
+               </li>
+            </ul>
+            <div class="footer">
+              <p style="color: white;"> Unique User ID:</p>
+              <p id="uid" style="color: white;">uid</p>
+            </div>
+      </nav>
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <div class="container-fluid">
+      <button type="button" id="sidebarCollapse" class="btn btn-primary">
+      <i class="fa fa-bars"></i>
+      <span class="sr-only">Toggle Menu</span>
+      </button>
+      <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+         aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item active">
+      <li class="nav-item">
+      <a class="nav-link" href="#"><button disabled class="btn btn-info btn-sm" id="quickstart-sign-in">Signed IN</button>
+      </li>
+      </ul>
+      </div>
+      </div>
+      </nav>
+      <h2>Hi ! <h2 class="mb-4" id='name'>name</h2></h2>
+      <iframe width="900px" height="900px" title="booking" name="booking" style="overflow:hidden;" scrolling="no"frameborder=0></iframe>
+     
+      </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
+
